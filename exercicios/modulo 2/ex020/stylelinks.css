@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a { 
+    color: rgb(10, 157, 255);
+    text-decoration: none; /*tira o sublinhado do texto*/
+    font-weight: bold;
+
+}
+
+a:visited { /* Visited = serve para sites que você ja visitou o que você visitou vai ficar desse jeito*/
+    color: rgb(5, 138, 131);
+
+}
+
+a:hover { /*Hover = Passando o mouse em cima vai ficar assim*/
+    text-decoration: underline;
+    color: black;
+}
+
+a:active { /* Active = Quando você clicar acontece algo no caso ira ficar amarelo*/
+    color: yellow;
+
+}
+/*
+Pseudo-classe uma vez dois pontos ":"
+Pseudo-elemento duas vezes dois pontos ":"
+*/
+.especial {
+    background-color: bisque;
+
+}
+
+.especial::before {
+    content: ' -> ';
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+
+}
+
+.especial::after { /* after = depois, logo depois de todos os links o comando vai ser esse para todos os links */
+    content: ' <- '; /*content = conteudo*/
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}

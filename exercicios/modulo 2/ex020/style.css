@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div {
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px; /*Altura*/
+    width: 200px; /* Largura*/
+}
+
+/* Hover = quando passar o mouse por cima acontece o que foi programado */
+div:hover {
+    background-color: yellow;
+
+}

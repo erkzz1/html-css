@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture><!--<pictures> serve para criar várias sources( várias fonte)-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <!--Note que a tag <source> possui três atributos:
+            ‣ type vai indicar o media type da imagem que usamos
+            ‣ srcset vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido
+            ‣ media indica o tamanho máximo a ser considerado para carregar a imagem
+            indicada no atributo srcset.-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--source media type muda a imagem a ser carregada dependendo do tamanho para não deixar o site carregar imagens granmde em telas pequenas( sempre ter folga de 50px do tamanho orignal da imagem) -->
+        <img src="imagens/foto-g.png" alt=" imagem flexível"><!--<img> serve para colocar imagens-->
+    </picture>
+   <!--É importante que existe uma ordem entre os <source>, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de <picture> deve ser a imagem padrão. Faça seus testes, modifique as ordens, entenda os resultados! -->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áduio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop><!--O atributo preload indica se o áudio será pré-carregado ou não e aceita três valores:
+        ‣ ๏ metadata vai carregar apenas as informações sobre o arquivo (tamanho,
+        tempo, informações de direitos, etc)
+        ‣ ๏ none não vai carregar absolutamente nada até que o usuário clique no botão
+        play ou um script inicie a reprodução
+        ‣ ๏ auto (padrão) vai carregar o arquivo de áudio inteiro assim que a página for
+        carregada, mesmo que o usuário nunca aperte o play
+        ‣ O atributo controls vai apresentar o player na tela. Caso não seja colocado na tag <audio>, o controle será transparente e o usuário não poderá interagir com ele.
+        ‣ O atributo autoplay, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.
+        ‣ O atributo loop vai fazer com que o áudio seja repetido eternamente assim queterminar a sua reprodução.  -->
+        <source src="midia/the-office-theme-song_01.mp3" type="audio/mp3">
+        <source src="midia/the-office-theme-song_01.ogg" type="audio/ogg">
+        <source src="midia/the-office-theme-song_01.wav" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir audio. <a href="midia/parkour-parkour-the-office-us-192-kbps_1_0.mp3"> clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+    <h1>Vídeos</h1>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px 12px;/* topleft, topright, bottomright, bottomleft */
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.384);
+
+
+}
+
+nav {
+    background-color: rgb(104, 103, 103);
+    padding: 10px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.568);
+    
+
+}
+
+nav > a { /* Quando os elementos estão dentro de um elemento especifico, são chamados de elementos filhos / foi criado um filho <a> para separar das caracteristas do pai <nav> assim todo link <a> que estiver dentro de <nav> terá essas caracteristicas*/
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    box-shadow: 0px 1px 6px 0px black;/* deslocamento horizontal(h-offset), deslocamento vertical(v-offset), embaçamento(blur), cor(color) */
+}
+
+nav > a:hover { /* Indica que o filho de nav tem um seletor de pseudo class :hover (só vai acontecer algo se passado o mouse */
+    text-decoration: underline;
+    
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 40px;/* topleft, topright, bottomright, bottomleft */
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.384);
+
+ }
+
+ article {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+
+ }
+
+ article > aside {
+    background-color: rgb(68, 67, 67);
+    color: white;
+    padding: 4px;
+    margin: 0px;
+ }
+
+ article > aside > p {
+    margin: 0px;
+
+ }
+
+ footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+
+
+ }
+
+ footer > p {
+    margin: 0px;
+
+ }
+
+ 
+
+#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+

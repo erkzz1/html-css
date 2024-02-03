@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: aqua;
+        }
+    </style><!-- Style usado para mudar a cor de todos os <mark> da página-->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+        <h2>Negrito / Destaque</h2>
+            <p>Nessa frase temos um <b> termo em Negrito</b> usando a tag &lt;b&gt;. </p> <!--Porém a tag <b> é pouco semântica e no html5 passamos a usar a tag <strong>...</strong>-->
+            <p>Nessa frase temos um <strong>termo em Destaque</strong> usando a semântica do html5 &lt;strong&gt;.</p><!--A tag <strong> significa que o termo delimitado possui força dentro da frase. Logo, ele aparecerá em negrito (destacado).Sendo assim, recomendamos que você passe a usar as tags <strong> para realizar essas mesmas formatações visuais, só que agora com sentido.-->
+
+        <h2>Itálico / Ênfase</h2>
+            <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;I&gt; (não semantica).</p>
+            <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p><!--Já a tag <em> significa que queremos dar ênfase (do Inglês emphasis) ao termo. Logo, ele aparecerá em itálico-->
+
+        <h2>Texto Marcado</h2>
+            <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;.</p><!--style é do css porém foi usado para mudar a cor marca texto--><!--usamos a tag <mark>…</mark> para delimitar o texto que queremos (demarcar), como se estivéssemosusando umacaneta marcador. -->
+            <p>E no outro parágrafo, temos <mark> outro texto marcado.</mark></p>
+
+        <h2>Texto grande e pequeno</h2>
+            <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.<p><!--<big> era usado para deixar as letras grande (obsoleto) <small> usado para deixar as letras pequenas (ainda usado pois faz sentido)-->
+
+        <h2>Texto deletado</h2>
+            <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado. Usando a tag &lt;del&gt;.</p><!--maneira correta de indicar que o texto deve ser lido, entretanto não deve ser considerado-->
+            <p>Antigamente era usado a tag &lt;strike&gt; que hoje também é depreciada pela versão do html5. <strike>como podemos ver aqui nessa frase</strike>.</p>
+
+        <h2>Texto inserido</h2>
+            <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois usando a tag &lt;ins&gt;</p><!--maneira certa de dar ênfase ao texto para falar que foi adicionado depois-->
+            <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; não semântico.</p>
+    
+        <h2>Texto sobrescrito</h2>
+            <p>para inserir coisas do tipo x<sup>20+3</sup></p><!-- <sup> usado para elevar o caractere-->
+
+        <h2>Texto subscrito</h2>
+            <p>para inserir coisas do tipo H<sub>2</sub>0</p><!-- <sub> usado para abaixar o caractere-->
+</body>
+</html>

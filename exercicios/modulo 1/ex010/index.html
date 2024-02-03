@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público do github</a> do curso em vídeo</p><!--a tag <a> serve para criar um hyperlink e seu principal atributo é href que cria uma referência hipertexto, Para poder controlar onde o site de destino vai abrir, podemos usar o atributo target, que suporta os seguintes valores:
+        ‣ _blank vai abrir o link em uma nova janela em branco
+        ‣ _self vai abrir o link na janela ou frame atual (padrão)
+        ‣ _top vai desfazer todos os frames e abrir o destino no navegador completo
+        ‣ _parent similar ao uso do _top em uma referência à janela mãe
+        ‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir
+    o atributo rel. Esse atributo aceita vários valores, entre eles vou citar:
+        ‣ next indica que o link é para a próxima parte do documento atual
+        ‣ prev indica que o link é para a parte anterior do documento atual
+        ‣ author indica que é um link para o site do autor do artigo atual
+        ‣ external indica que é um link para outro site que não faz parte do site atual
+        ‣ nofollow indica que é um link para um site não endossado, como um link pago -->
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal do youtube</a> do curso em vídeo</p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar nossa <a href="Noticias/pag003.html" target="_self">página de notícias</a></p>
+
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+    
+</body>
+</html>
