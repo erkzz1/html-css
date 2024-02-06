@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+    background-image: url(imagens/wallpaper001.jpg);
+
+}
+div.quadrado {
+    display: inline-block; /* Consegue definir largura e altura, deixa o elemento um ao lado do outro, faz os elementos terem o comportamento de linha( agirem como linhas de texto quando aumentados e diminuidos) */
+    border-radius: 0.625rem;
+    background-color: lightgray;
+    border:  0.125rem solid black; 
+    width: 18.75rem;  
+    height: 18.75rem;
+}
+/* 3 Maneiras de personalizar o fundinho*/
+div#q1{
+    background-color: skyblue;
+
+}
+
+div#q2{
+    background-image: linear-gradient(to bottom, rgb(0, 183, 255), rgb(98, 0, 128));
+
+}
+
+div#q3{
+    background-image: url('imagens/pattern003.png');
+/* url serve para buscar a imagem dentro da pasta com o comando background-image:*/
+    
+}
