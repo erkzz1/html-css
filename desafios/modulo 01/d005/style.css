@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background: rgba(0, 0, 0, 0.267);
+    font: normal 14pt Arial;
+    text-align: center;
+    padding: 1rem;
+    
+    
+}
+
+div#sociais {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+img#foto {
+    
+    border-radius: 50%;
+    border: 0.25rem solid rgba(0, 0, 0, 0.363);
+}
+
+section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 32rem;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 1rem;
+}
+
